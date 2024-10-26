@@ -11,21 +11,14 @@ title: "Ditelo"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Great Outdoors</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #fff;
             background-color: #000;
-        }
-        .header {
-            background-image: url('https://via.placeholder.com/1600x900/000000/ffffff?text=Mountains+at+Night');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
         }
         nav {
             display: flex;
@@ -58,13 +51,15 @@ title: "Ditelo"
             padding: 50px 10%;
         }
         .image-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            justify-content: center;
             gap: 20px;
+            margin-bottom: 30px;
         }
         .image-card {
             position: relative;
-            height: 300px;
+            height: 750px;
+            width: 350px;
             overflow: hidden;
         }
         .image-card img {
@@ -88,29 +83,27 @@ title: "Ditelo"
             height: 200px;
             object-fit: cover;
         }
-        .footer {
+
+        #explore h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
             text-align: center;
-            padding: 20px;
-            background-image: url('https://via.placeholder.com/1600x900/000000/ffffff?text=Mountains+at+Sunset');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
+            color: #f2efef; /* Grigio topo */
+            margin-bottom: 20px;
+        }
+
+        #explore p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #a9a9a9; /* Un grigio più chiaro per il paragrafo */
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <nav>
-            <a href="#about">ABOUT</a>
-            <a href="#explore">EXPLORE</a>
-            <a href="#">LOGO</a>
-            <a href="#journal">JOURNAL</a>
-            <a href="#search">SEARCH</a>
-        </nav>
         <div class="hero">
-            <h1>The Great Outdoors</h1>
-            <p>Wander often. Wonder always.</p>
-            <div class="play-button">▶</div>
+            <img src="assets/logo.png" alt="Ditelo Logo" style="width: 300px;">
         </div>
     </header>
 
@@ -119,58 +112,32 @@ title: "Ditelo"
         <p>We seek to provide the most authentic content from athletes, adventurers, explorers and travellers around the world. Our long-term mission is to educate, inspire and enable all peoples to experience & protect wilderness.</p>
         <div class="image-grid">
             <div class="image-card">
-                <img src="https://via.placeholder.com/600x400/0000FF/ffffff?text=Nærøyfjorden" alt="Nærøyfjorden">
-                <div class="caption">
-                    <h3>Nærøyfjorden</h3>
-                    <p>NORWAY</p>
-                </div>
+                <img src="assets/survey_logo.png">
             </div>
             <div class="image-card">
-                <img src="https://via.placeholder.com/600x400/FF0000/ffffff?text=Antelope+Canyon" alt="Antelope Canyon">
-                <div class="caption">
-                    <h3>Antelope Canyon</h3>
-                    <p>UNITED STATES</p>
-                </div>
+                <img src="assets/survey.png">
             </div>
             <div class="image-card">
-                <img src="https://via.placeholder.com/600x400/00FF00/ffffff?text=Grossglockner" alt="Grossglockner">
-                <div class="caption">
-                    <h3>Grossglockner</h3>
-                    <p>AUSTRIA</p>
-                </div>
+                <img src="assets/matches.png">
             </div>
         </div>
-        <a href="#" class="see-more">SEE MORE</a>
     </section>
 
-    <section id="journal" class="section">
-        <h2>The Journal</h2>
-        <p>Our favorite stories about public lands and opportunities for you to get involved in protecting your outdoor experiences.</p>
-        <div class="journal-grid">
-            <div class="journal-item">
-                <img src="https://source.unsplash.com/600x400/?yosemite" alt="An Unforgettable">
-                <h3>An Unforgettable</h3>
-                <p>MAY 30, 2017</p>
-                <p>If you only have one day to visit Yosemite National Park and you want to make the most out of it.</p>
+    <section id="explore" class="section">
+        <h2>Explore the World</h2>
+        <p>We seek to provide the most authentic content from athletes, adventurers, explorers and travellers around the world. Our long-term mission is to educate, inspire and enable all peoples to experience & protect wilderness.</p>
+        <div class="image-grid">
+            <div class="image-card">
+                <img src="assets/survey.png">
             </div>
-            <div class="journal-item">
-                <img src="https://source.unsplash.com/600x400/?golden,gate,bridge" alt="Symphonies in Steel">
-                <h3>Symphonies in Steel</h3>
-                <p>MAY 28, 2017</p>
-                <p>Crossing the Golden Gate Bridge from San Francisco, you arrive in Marin even before landing on solid ground.</p>
+            <div class="image-card">
+                <img src="assets/survey.png">
             </div>
         </div>
-        <a href="#" class="all-posts">ALL POSTS</a>
     </section>
 
     <footer class="footer">
-        <p>© 2017 THE GREAT OUTDOORS. All rights reserved.</p>
-        <nav>
-            <a href="#about">ABOUT</a>
-            <a href="#explore">EXPLORE</a>
-            <a href="#journal">JOURNAL</a>
-            <a href="#search">SEARCH</a>
-        </nav>
+        <p>© 2024 Ditelo. All rights reserved.</p>
     </footer>
 </body>
 </html>
